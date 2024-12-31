@@ -1,0 +1,42 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.call-controls {
+    display: flex; /* Arrange buttons and transcription horizontally */
+    align-items: flex-start; /* Align items to the top */
+    margin-top: 20px; /* Add some space above the controls */
+}
+
+.transcription-box {
+    border: 2px solid #000000;
+    padding: 10px;
+    margin-left: 20px; /* Space between button and transcription */
+    width: 300px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    overflow-y: auto; /* Add scrollbar if content overflows */
+    white-space: pre-wrap; /* Preserve line breaks */
+    word-wrap: break-word; /* Break long words */
+    overflow-y: auto; /* For scrollbar if content overflows */
+}
+
+.call-timer {
+    margin-left: 10px;
+}
+
+
+.message {
+    margin-bottom: 5px; /* Add spacing between messages */
+    word-wrap: break-word; /* Prevents long words from breaking layout */
+}
+
+.message-role {
+    font-weight: bold; /* Make role stand out */
+    display: inline-block;
+    min-width: 60px; /* ensures roles are aligned */
+}
+.message-content {
+    display: inline-block;
+}
